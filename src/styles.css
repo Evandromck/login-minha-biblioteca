@@ -23,18 +23,19 @@
     justify-content: center;
     padding: 15px;
     background-image: url("./assets/capa_a.png");
-
+    
     
     
 }
 
+
 .wrap-login{
     width: 390px;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 12px;
 
     overflow: hidden;
-    padding: 77px 55px 33px 55px;
+    padding: 5px 55px 33px 55px;
     
 }
 
@@ -42,6 +43,8 @@
     display: block;
     font-size: 20px;  /* Tamanho da fonte do login*/
     color: #88a9c8;
+    margin-bottom: 10px;
+
 
     line-height: 1.2;      /*parte que sapara com o logo*/
 /*  text-align: center;     fico com o logo no centro*/
@@ -54,6 +57,10 @@
     
     
 }
+
+
+
+
 .login-form-title {
     width: 100px; 
     
@@ -81,5 +88,49 @@
     
     padding: 0 35px;
     padding-left: 10px;
+    
+}
+
+
+.container-login-form-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 13px;
+}
+
+.login-form-btn{
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+
+    line-height: 1.2;
+
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 40px;
+    background-color: #0c354b;
+}
+
+.login-form-btn:hover{
+    cursor: pointer;
+}
+
+.txt1{
+    font-size: 20px;
+    
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    
+    color: #88a9c8;
+    
+    
     
 }

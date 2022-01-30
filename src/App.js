@@ -5,24 +5,28 @@ import './styles.css'
 
 
 function App() {
+
+   
+
   return (
     <div classname="container">
-      <div className="container-login">
-      
-      
-      
+      <div className="container-login">   
+
+        
         <div className="wrap-login">
         
-        <form className="login-form">  
-        
-        <span className="login-form-img">
-          <img src={Imglogo} alt="logoicon" />
+
+        <span className="login-form-img">          
+          <img src={Imglogo}  alt="logoicon" />
         </span>
-          <span className="login-form-title">Login</span>
+        
+        <form className="login-form">         
+        
+          <span className="login-form-title"><em><b>Login</b></em></span>
           
           <div className="wrap-input">
           <form action='/' method='post'>
-           <input className="input" type='text' name='senha' placeholder='E-MAIL'/>
+           <input className="input" type='text' name='email' placeholder='E-MAIL'/>
            </form>
            </div>
 
@@ -33,11 +37,11 @@ function App() {
            </div>
 
           <div className="container-login-form-btn">
-            <buttton className="login-form-btn">entrar</buttton>
+            <buttton className="login-form-btn"><em><b>entrar</b></em></buttton>
           </div>
 
           <div className="txt-center">
-          <a className="txt1" href="3">Recuperar senha</a>
+          <a className="txt1" href="3"><em><b>Recuperar senha</b></em></a>
           </div>
 
 
@@ -46,7 +50,9 @@ function App() {
 
       
       </div>
-    </div>
+      </div>     
+      
+    
   );
 }
 
