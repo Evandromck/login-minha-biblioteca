@@ -1,43 +1,51 @@
-import Imgcapa from './assets/capa.png'
-import Imglivra from './assets/livraria.png'
-import Imgport from './assets/portariaemerj.png'
 import Imglogo from './assets/logo.png'
+
+import './styles.css'
 
 
 
 function App() {
   return (
-    <div className="container">
-      <div className="container-capa">
-        <span className="login-form-capa">
-          <img src={Imgcapa} alt="capa-front" />
-          <img src={Imglivra} alt="livra-front" />
-          <img src={Imgport} alt="port-front" />
-          <img src={Imglogo} alt="logo-front" />
+    <div classname="container">
+      <div className="container-login">
+      
+      
+      
+        <div className="wrap-login">
+        
+        <form className="login-form">  
+        
+        <span className="login-form-img">
+          <img src={Imglogo} alt="logoicon" />
+        </span>
           <span className="login-form-title">Login</span>
           
           <div className="wrap-input">
-            <input type="email" />
-            <span className="focus-input" data-placeholder="Email"></span>
-          </div>
+          <form action='/' method='post'>
+           <input className="input" type='text' name='senha' placeholder='E-MAIL'/>
+           </form>
+           </div>
 
-          <div className="wrap-input">
-            <input type="password" />
-            <span className="focus-input" data-placeholder="Password"></span>
-          </div>
+           <div className="wrap-input">
+           <form action='/' method='post'>
+           <input className="input" type='text' name='senha' placeholder='SENHA'/>
+           </form>
+           </div>
 
           <div className="container-login-form-btn">
-            <button className="login-form-btn">Login</button>
+            <buttton className="login-form-btn">entrar</buttton>
           </div>
 
-         <div className="text-center">
-            <a className="txt1" href="https://www.google.com.br">Recuperar senha</a>
-         </div>
-          
-        </span>
-        
-      </div>
+          <div className="txt-center">
+          <a className="txt1" href="3">Recuperar senha</a>
+          </div>
 
+
+        </form>
+        </div>
+
+      
+      </div>
     </div>
   );
 }
