@@ -1,4 +1,4 @@
-/*{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;    
@@ -27,6 +27,12 @@
     
 }
 
+.logo{
+    margin-left: 63px;
+
+    
+}
+
 
 .wrap-login{
     width: 360px;
@@ -38,31 +44,9 @@
     
 }
 
-.login-form-title{
-    display: block;
-    font-size: 20px;   Tamanho da fonte do login
-    color: #88a9c8;
-    margin-bottom: 10px;
-
-
-    line-height: 1.2;      /*parte que sapara com o logo*/
-/*  text-align: center;     ficar com o logo no centro
-} 
-
-.login-form-img{
-    
-    margin-left: 63px;  /*centralizando o logo 
-                     
-    
-
-
-}
-
-
-
-
 .login-form-title {
     width: 100px; 
+    color: #87a9c7;
     
     
 }
@@ -132,4 +116,5 @@
     color: #88a9c8;
     
     
-} */
+}
+

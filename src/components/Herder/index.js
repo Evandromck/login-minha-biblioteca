@@ -1,54 +1,24 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import { BrowserRouter } from 'reac-router-dom'
-
-import Header from './components/Herder';
-import Footer from './components/Footer';
-
-import Routes from './Routes';
-
-import './App.css';
-
-function App(){
-  return ( 
-      <BrowserRouter>
-       <Header />
-
-       <Routes />
-       
-       <Footer />
-      </BrowserRouter>
-  );
-     
-}
-
-export default App;
 
 
+import { AreaHeader } from './styled'
 
-
-
-
-
-
-
-/*import  Routes  from './Routes';
-
-function App() {
- 
-  return (
-
-    <BrowserRouter>
-          <Routes />
-    <body className="container">
+function Hearder(){
+    return(
+        
+        <AreaHeader>
+          <body className="container">
       
       <div className="container-login">  
       
         <div className="wrap-login">
         
-
-        <span className="login-form-img">          
-          <img src={Imglogo}  alt="logoicon" />
-        </span> 
+       <div className="logo">
+           
+           < img  src = "../../../logo.png"  alt = ""  />
+       </div>
+        
         
         <form className="login-form">         
         
@@ -80,12 +50,10 @@ function App() {
 
       
       </div>
-      </body>  
-
-         
-      
-      </BrowserRouter>
-  );
+      </body>
+        </AreaHeader>
+        
+    );
 }
 
-export default App;*/
+export default Hearder;
