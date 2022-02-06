@@ -1,6 +1,7 @@
-interface Item {
-    label:string;
+interface Item { 
+    label: string;
     link: string;
+    icon?: JSX.Element;
 }
 
 interface ItemProps {
@@ -8,13 +9,12 @@ interface ItemProps {
 }
 
 export default function MenuItem({linkProps}:ItemProps){
-        return(
-            <ul>
-                {linkProps.map((item:Item)=>(
-                <li>{item.label}</li>
-               ))}
-           </ul>
+
+    return (
+        <ul>
+            {linkProps.map((item:Item)=>(
+                <li>{item?.icon} {item.label}</li>
+            ))}
+        </ul>
     )
-            
-            
 }

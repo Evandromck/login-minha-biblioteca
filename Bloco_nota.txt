@@ -1,7 +1,7 @@
 Aula 1 02:50hs
 ## npm install styled-components                            // ok
-## npm install @types/styled-components --save-dev         // 
-## npx create-react-app react-emerj --template typescript  //
+## npm install @types/styled-components --save-dev         // ok
+## npx create-react-app react-emerj --template typescript  //ok
 ## npm install @emotion/react  //ok
 stop temp 3:21hs
 
@@ -16,6 +16,8 @@ npm install @mui/material @mui/styled-engine-sc styled-components  // ok
 npm install @mui/icons-material  //ok
 
 npm install @emotion/react  // ok
+
+npm install react-router-dom@06 //ok
 
 Aula 3
 
