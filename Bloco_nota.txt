@@ -1,0 +1,105 @@
+Aula 1 02:50hs
+## npm install styled-components                            // ok
+## npm install @types/styled-components --save-dev         // 
+## npx create-react-app react-emerj --template typescript  //
+## npm install @emotion/react  //ok
+stop temp 3:21hs
+
+npm
+Para instalar e salvar em suas dependências do package.json, execute:
+
+// usando npm
+npm install @mui/material @emotion/react @emotion/styled    // ok
+
+npm install @mui/material @mui/styled-engine-sc styled-components  // ok
+
+npm install @mui/icons-material  //ok
+
+npm install @emotion/react  // ok
+
+Aula 3
+
+https://mui.com/pt/components/data-grid/
+
+npm install @mui/x-data-grid
+
+https://github.com/glauciodaniel/emerj-react
+
+https://mui.com/pt/components/data-grid/
+ 
+Aula 4 
+
+https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+
+http://20.120.7.70/user
+
+https://jsonplaceholder.typicode.com/
+
+Cross-Origin Resource Sharing
+
+app.enableCors({
+    origin: true,
+    methods: 'GET,HEAD, PUT, PATCH, POST, DELETE, OPTIONS',
+    credentials: true,
+  });
+
+
+  app.enableCors({
+    origin: true,
+    methods: 'GET,HEAD, PUT, PATCH, POST, DELETE, OPTIONS',
+    credentials: true,
+  });
+
+
+Aula 5 
+
+<Box
+                    component="form"
+                    sx={{
+                        '& .MuiTextField-root': { m: 1, width: '25ch' },
+                    }}
+                    noValidate
+                    autoComplete="off"
+                    >
+                        <TextField
+                        required
+                        id="outlined-required"
+                        label="Required"
+                        defaultValue="Hello World"
+                        />
+                        <TextField
+                        disabled
+                        id="outlined-disabled"
+                        label="Disabled"
+                        defaultValue="Hello World"
+                        />
+                </Box>
+
+
+import SendIcon from '@mui/icons-material/Send';
+
+https://mui.com/components/alert/
+
+
+
+styled Global 
+
+*{
+      box-sizing: border-box;
+      font-family: 'Opens Sans', sans-sarif;
+  }
+  html, body{
+      margin: 0;
+      padding: 0;
+      outline: 0;
+  }
+
+`
+
+
+
+
+
+
+
+
