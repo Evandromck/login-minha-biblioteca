@@ -15,7 +15,7 @@ const Container = styled.div`
 const Home:React.FC = () =>(
     <Container>
         <SideBar />
-        <Main Welcome="Bem vindo" route=""/>
+        <Main Welcome="Home" route=""/>
     </Container>
 )
 
