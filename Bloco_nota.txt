@@ -6,7 +6,7 @@ Aula 1 02:50hs
 stop temp 3:21hs
 
 npm
-Para instalar e salvar em suas dependências do package.json, execute:
+instalar e salvar em suas dependências do package.json, execute:
 
 // usando npm
 npm install @mui/material @emotion/react @emotion/styled    // ok
@@ -18,6 +18,10 @@ npm install @mui/icons-material  //ok
 npm install @emotion/react  // ok
 
 npm install react-router-dom@06 //ok
+
+npm install @types/react-router-dom //ok
+
+npm install --save-dev @types/query-string //ok
 
 Aula 3
 

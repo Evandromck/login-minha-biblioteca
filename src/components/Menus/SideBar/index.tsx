@@ -1,8 +1,8 @@
-import React from 'react';
-import MenuItem from '../MenuItem';
-import { menu } from '../MenuItem/MenuItemData';
-import { SideBarNav } from './styled';
-import styled from 'styled-components';
+import React from "react";
+import MenuItem from "../MenuItem";
+import { menu } from "../MenuItem/MenuItemData";
+import { SideBarNav } from "./styled";
+import styled from "styled-components";
 //TypeScript - Superset JavaScript que cria e obriga o uso de dados tipados
 
 const SideBarContainer = styled.section`
@@ -17,22 +17,20 @@ const SideBarContainer = styled.section`
       width: 350px;
         }
     }
-      `
+      `;
 
 interface SideBarProps {
   menuLateralText?: string;
 }
 
-export default function SideBar({menuLateralText}:SideBarProps){
-
-//    condicao E condicao
-  return(
-  <SideBarContainer>
+export default function SideBar({ menuLateralText }: SideBarProps) {
+  //    condicao E condicao
+  return (
+    <SideBarContainer>
       <SideBarNav>
-          {menuLateralText && <div>{menuLateralText}</div>}
-          <MenuItem linkProps={menu}/>
+        {menuLateralText && <div>{menuLateralText}</div>}
+        <MenuItem linkProps={menu} />
       </SideBarNav>
-  </SideBarContainer>
-  )
+    </SideBarContainer>
+  );
 }
-
