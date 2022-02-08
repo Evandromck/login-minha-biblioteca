@@ -20,7 +20,7 @@ export default function SignIn() {
   };
 
   const onSubmit = (e: React.FormEvent) => {
-    e.preventDefault(); //pare o comportamento padrão
+    e.preventDefault(); //comparando o comportamento padrão
     console.log(formData);
   };
 
