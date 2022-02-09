@@ -1,9 +1,8 @@
 import React from "react";
-import SideBar from "../components/Menus/SideBar";
 import styled from "styled-components";
 import createGlobalStyle from "../styles/globol";
 //import UsersGrid from "../components/usersGrid";
-import SignIn from "../components/Form/Auth/SignIn";
+import NovaSenhaCadastrada from "../components/Form/Auth/SenhaNovaCadastrada";
 
 const GlobalStyle = createGlobalStyle;
 const Container = styled.div`
@@ -16,9 +15,7 @@ export default function Login() {
   return (
     <Container>
       <GlobalStyle />
-      <SideBar />
-
-      <SignIn />
+      <NovaSenhaCadastrada />
     </Container>
   );
 }

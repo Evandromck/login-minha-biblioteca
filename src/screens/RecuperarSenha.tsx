@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import createGlobalStyle from "../styles/globol";
 //import UsersGrid from "../components/usersGrid";
-import SignIn from "../components/Form/Auth/SignIn";
+import RecuperarSenha from "../components/Form/Auth/RecuperarSenha";
 
 const GlobalStyle = createGlobalStyle;
 const Container = styled.div`
@@ -15,7 +15,7 @@ export default function Login() {
   return (
     <Container>
       <GlobalStyle />
-      <SignIn />
+      <RecuperarSenha />
     </Container>
   );
 }
