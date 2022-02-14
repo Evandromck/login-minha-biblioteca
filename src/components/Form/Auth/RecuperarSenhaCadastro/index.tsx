@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import fundo from "../SignIn/image.png";
 
 const defaultFormData = {
   email: "",
@@ -22,6 +23,9 @@ export default function SignIn() {
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault(); //prepara e comportamento padrão
+
+    e.preventDefault(); //comparando o comportamento padrão
+
     console.log(formData);
   };
 
@@ -31,51 +35,53 @@ export default function SignIn() {
     display: flex;
     align-items: center;
     justify-content: center;
-
     form {
       width: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      position: absolute;
+      margin-right: 25px;
     }
   `;
   return (
     <Container>
+      <img src={fundo} alt="Alguma coisa" />
       <Box
         component="form"
         sx={{
-          "& .MuiTextField-root": { m: 1, width: "40%" },
+          "& .MuiTextField-root": { m: 1, width: "35%" },
         }}
         autoComplete="off"
         onSubmit={onSubmit}
       >
-        <em>
-          <b>Login</b>
-        </em>
-        <TextField
-          required
-          id="email"
-          label="E-mail"
-          placeholder="Digite o E-mail"
-        />
+        <div className="text">
+          <em>
+            <b>Login</b>
+          </em>
+        </div>
+
+        <TextField required id="email" label="E-MAIL" placeholder="E-MAIL" />
 
         <TextField
           required
           id="password"
-          label="Senha"
-          placeholder="Digite a Senha"
+          label="SENHA"
+          placeholder="SENHA"
           type="password"
         />
         <Button
-          sx={{ width: "40%", margin: "1.5%" }}
+          sx={{ width: "35%", margin: "1.5%" }}
           size="medium"
           variant="contained"
           disableElevation
         >
-          <em>
-            <b>entrar</b>
-          </em>
+          <div className="text2">
+            <em>
+              <b>entrar</b>
+            </em>
+          </div>
         </Button>
       </Box>
     </Container>

@@ -10,4 +10,5 @@ export default createGlobalStyle`
         padding:0;
         outline: 0;
     }
+   
 `;
