@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import fundo from "../SignIn/image.png";
+import fundo from "../NovaSenha/tela 2.png";
 
 const defaultFormData = {
   email: "",
@@ -35,6 +35,15 @@ export default function SignIn() {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    span {
+      color: #0c354b;
+      margin-right: 0%;
+      font-weight: bold;
+      text-align: center;
+      font-size: 100%;
+    }
+
     form {
       width: 50%;
       display: flex;
@@ -43,6 +52,15 @@ export default function SignIn() {
       justify-content: center;
       position: absolute;
       margin-right: 25px;
+      margin-top: 5%;
+      padding: 10px 14px;
+    }
+    Button {
+      background-color: #0c354b;
+    }
+
+    text {
+      text-transform: lowercase;
     }
   `;
   return (
@@ -51,37 +69,44 @@ export default function SignIn() {
       <Box
         component="form"
         sx={{
-          "& .MuiTextField-root": { m: 1, width: "35%" },
+          "& .MuiTextField-root": { m: 0.9, width: "35%" },
         }}
         autoComplete="off"
         onSubmit={onSubmit}
       >
-        <div className="text">
+        <span>
           <em>
-            <b>Login</b>
+            Este é o seu primeiro acesso.
+            <br /> troque e memorize
+            <br /> a sua nova senha
           </em>
-        </div>
-
-        <TextField required id="email" label="E-MAIL" placeholder="E-MAIL" />
+        </span>
 
         <TextField
           required
           id="password"
-          label="SENHA"
-          placeholder="SENHA"
+          placeholder="DIGITE A NOVA SENHA"
           type="password"
         />
+
+        <TextField
+          required
+          id="password"
+          placeholder="COMFIRME A NOVA SENHA"
+          type="password"
+        />
+
         <Button
           sx={{ width: "35%", margin: "1.5%" }}
           size="medium"
           variant="contained"
           disableElevation
         >
-          <div className="text2">
-            <em>
-              <b>entrar</b>
-            </em>
-          </div>
+          <text>
+            <i>
+              <b>cadastrar</b>
+            </i>
+          </text>
         </Button>
       </Box>
     </Container>

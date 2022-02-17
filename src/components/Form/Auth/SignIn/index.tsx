@@ -35,6 +35,13 @@ export default function SignIn() {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    span {
+      color: #94b1cd;
+      margin-right: 27%;
+      font-weight: bold;
+    }
+
     form {
       width: 50%;
       display: flex;
@@ -43,6 +50,19 @@ export default function SignIn() {
       justify-content: center;
       position: absolute;
       margin-right: 25px;
+      margin-top: 3%;
+      padding: 8.5px 14px;
+    }
+    Button {
+      background-color: #0c354b;
+    }
+
+    em {
+      color: #94b1cd;
+    }
+
+    text {
+      text-transform: lowercase;
     }
   `;
   return (
@@ -51,38 +71,34 @@ export default function SignIn() {
       <Box
         component="form"
         sx={{
-          "& .MuiTextField-root": { m: 1, width: "35%" },
+          "& .MuiTextField-root": { m: 0.9, width: "35%" },
         }}
         autoComplete="off"
         onSubmit={onSubmit}
       >
-        <div className="text">
-          <em>
-            <b>Login</b>
-          </em>
-        </div>
+        <span>
+          <em>Login</em>
+        </span>
 
-        <TextField required id="email" label="E-MAIL" placeholder="E-MAIL" />
+        <TextField required id="email" placeholder="E-MAIL" type="email" />
 
-        <TextField
-          required
-          id="password"
-          label="SENHA"
-          placeholder="SENHA"
-          type="password"
-        />
+        <TextField required id="password" placeholder="SENHA" type="password" />
+
         <Button
           sx={{ width: "35%", margin: "1.5%" }}
           size="medium"
           variant="contained"
           disableElevation
         >
-          <div className="text2">
-            <em>
+          <text>
+            <i>
               <b>entrar</b>
-            </em>
-          </div>
+            </i>
+          </text>
         </Button>
+        <em>
+          <b>Recuperar senha</b>
+        </em>
       </Box>
     </Container>
   );
