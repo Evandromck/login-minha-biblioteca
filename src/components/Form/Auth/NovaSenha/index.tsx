@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import fundo from "../NovaSenha/tela 2.png";
+import fundo from "../img/NovaSenha.png";
 
 const defaultFormData = {
   email: "",
@@ -31,7 +31,7 @@ export default function SignIn() {
 
   const Container = styled.div`
     width: 100%;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 50px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,8 +77,8 @@ export default function SignIn() {
         <span>
           <em>
             Este é o seu primeiro acesso.
-            <br /> troque e memorize
-            <br /> a sua nova senha
+            <br /> Troque e memorize
+            <br /> a sua nova senha!
           </em>
         </span>
 

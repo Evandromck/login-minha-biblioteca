@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import fundo from "../SignIn/image.png";
+import fundo from "../img/NovaSenha.png";
 
 const defaultFormData = {
   email: "",
@@ -31,15 +31,16 @@ export default function SignIn() {
 
   const Container = styled.div`
     width: 100%;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 50px);
     display: flex;
     align-items: center;
     justify-content: center;
 
     span {
       color: #94b1cd;
-      margin-right: 27%;
+      margin-right: 15%;
       font-weight: bold;
+      font-size: 100%;
     }
 
     form {
@@ -50,19 +51,18 @@ export default function SignIn() {
       justify-content: center;
       position: absolute;
       margin-right: 25px;
-      margin-top: 3%;
-      padding: 8.5px 14px;
+      margin-top: 5%;
+      padding: 10px 14px;
     }
     Button {
       background-color: #0c354b;
     }
 
-    em {
-      color: #94b1cd;
-    }
-
     text {
       text-transform: lowercase;
+    }
+    footer {
+      text-align: center;
     }
   `;
   return (
@@ -77,12 +77,22 @@ export default function SignIn() {
         onSubmit={onSubmit}
       >
         <span>
-          <em>Login</em>
+          <em>Recuperar senha</em>
         </span>
 
-        <TextField required id="email" placeholder="E-MAIL" type="email" />
+        <TextField
+          required
+          id="password"
+          placeholder="DIGITE A NOVA SENHA"
+          type="password"
+        />
 
-        <TextField required id="password" placeholder="SENHA" type="password" />
+        <TextField
+          required
+          id="password"
+          placeholder="COMFIRME A NOVA SENHA"
+          type="password"
+        />
 
         <Button
           sx={{ width: "35%", margin: "1.5%" }}
@@ -92,13 +102,15 @@ export default function SignIn() {
         >
           <text>
             <i>
-              <b>entrar</b>
+              <b>cadastrar</b>
             </i>
           </text>
         </Button>
-        <em>
-          <b>Recuperar senha</b>
-        </em>
+        <footer>
+          <i>
+            <b>Memorize a sua nova senha!</b>
+          </i>
+        </footer>
       </Box>
     </Container>
   );

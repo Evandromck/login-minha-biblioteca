@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./screens/Home";
 import NovaSenha from "./screens/NovaSenha";
-import NovaSenhaCadastrada from "./screens/NovaSenhaCadastrada";
+import ParabensNovaSenha from "./screens/NovaSenhaCadastrada";
 import RecuperarSenha from "./screens/RecuperarSenha";
 import RecuperarSenhaCadastro from "./screens/RecuperarSenhaCadastro";
 
@@ -12,7 +12,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="novasenha" element={<NovaSenha />} />
-      <Route path="novasenhacadastrada" element={<NovaSenhaCadastrada />} />
+      <Route path="parabensnovasenha" element={<ParabensNovaSenha />} />
       <Route path="recuperarsenha" element={<RecuperarSenha />} />
       <Route
         path="recuperarsenhacadastro"

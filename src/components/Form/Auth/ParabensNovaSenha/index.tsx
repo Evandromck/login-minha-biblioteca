@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import fundo from "../SignIn/image.png";
+import fundo from "../img/Login.png";
 
 const defaultFormData = {
   email: "",
@@ -31,7 +31,7 @@ export default function SignIn() {
 
   const Container = styled.div`
     width: 100%;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 50px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +59,7 @@ export default function SignIn() {
     }
 
     text {
-      text-transform: lowercase;
+      text-transform: none;
     }
   `;
   return (
@@ -88,7 +88,7 @@ export default function SignIn() {
         >
           <text>
             <i>
-              <b>entrar</b>
+              <b>Acessar a Minha Biblioteca</b>
             </i>
           </text>
         </Button>

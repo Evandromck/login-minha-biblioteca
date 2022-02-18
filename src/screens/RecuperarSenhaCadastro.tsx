@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import createGlobalStyle from "../styles/globol";
 //import UsersGrid from "../components/usersGrid";
-import RecuperarSenhaCadastro from "../components/Form/Auth/RecuperarSenhaCadastro";
+import RecuperarSenhaCadastro from "../components/Form/Auth/ConfirmaSenha";
 
 const GlobalStyle = createGlobalStyle;
 const Container = styled.div`
