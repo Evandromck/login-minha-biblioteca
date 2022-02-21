@@ -14,10 +14,7 @@ ReactDOM.render(
       <Route path="novasenha" element={<NovaSenha />} />
       <Route path="parabensnovasenha" element={<ParabensNovaSenha />} />
       <Route path="recuperarsenha" element={<RecuperarSenha />} />
-      <Route
-        path="recuperarsenhacadastro"
-        element={<RecuperarSenhaCadastro />}
-      />
+      <Route path="recuperarsenhacadastro" element={<RecuperarSenhaCadastro />}/>
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")

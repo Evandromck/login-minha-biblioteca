@@ -40,10 +40,11 @@ export default function SignIn() {
       color: #94b1cd;
       margin-right: 27%;
       font-weight: bold;
+      font-size: 100%;
     }
 
     form {
-      width: 50%;
+      width: 45%;
       display: flex;
       flex-direction: column;
       align-items: center;

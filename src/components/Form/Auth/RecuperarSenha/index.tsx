@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import fundo from "../img/Login.png";
+import fundo from "../img/NovaSenha_2.png";
 
 const defaultFormData = {
   email: "",
@@ -38,13 +38,12 @@ export default function SignIn() {
 
     span {
       color: #94b1cd;
-      margin-right: 15%;
+      margin-right: 18%;
       font-weight: bold;
-      font-size: 100%;
     }
 
     form {
-      width: 50%;
+      width: 45%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -72,8 +71,10 @@ export default function SignIn() {
       color: #0c354b;
       margin-right: 0%;
       font-weight: bold;
-      font-size: 100%;
+      font-size: 108%;
       text-align: center;
+      position: fixed;
+     margin-top: 18%;
     }
   `;
   return (
