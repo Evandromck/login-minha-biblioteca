@@ -90,7 +90,7 @@ export default function SignIn() {
         <TextField
           required
           id="password"
-          placeholder="COMFIRME A NOVA SENHA"
+          placeholder="CONFIRME A NOVA SENHA"
           type="password"
         />
 

@@ -101,7 +101,7 @@ export default function SignIn() {
         <TextField
           required
           id="password"
-          placeholder="COMFIRME O SEU E-MAIL"
+          placeholder="CONFIRME O SEU E-MAIL"
           type="email"
         />
 
