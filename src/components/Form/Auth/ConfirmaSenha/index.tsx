@@ -63,6 +63,7 @@ export default function SignIn() {
     }
     footer {
       text-align: center;
+      color: #0c354b;
     }
   `;
   return (
