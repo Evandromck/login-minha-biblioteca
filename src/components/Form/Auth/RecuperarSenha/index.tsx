@@ -74,7 +74,7 @@ export default function SignIn() {
       font-size: 108%;
       text-align: center;
       position: fixed;
-     margin-top: 18%;
+      margin-top: 21%;
     }
   `;
   return (
